@@ -1,50 +1,50 @@
 // 11_files.c
-// Como ler e escrever em arquivos de texto.
+// How to read from and write to text files.
 
 #include <stdio.h>
 
 int main() {
-    // Ponteiro de arquivo
+    // File pointer
     FILE *arquivo;
 
-    // --- Escrita em Arquivo ---
+    // --- Writing to a File ---
 
-    // `fopen` abre um arquivo. "w" significa modo de escrita (write).
-    // Se o arquivo não existir, ele será criado. Se existir, seu conteúdo será apagado.
+    // `fopen` opens a file. "w" means write mode.
+    // If the file doesn't exist, it will be created. If it exists, its content will be erased.
     arquivo = fopen("exemplo.txt", "w");
 
-    // Sempre verifique se o arquivo foi aberto com sucesso
+    // Always check if the file was opened successfully
     if (arquivo == NULL) {
-        printf("Erro ao abrir o arquivo para escrita!\n");
-        return 1; // Retorna um código de erro
+        printf("Error opening the file for writing!\n");
+        return 1; // Return an error code
     }
 
-    // `fprintf` funciona como `printf`, mas escreve em um arquivo.
-    fprintf(arquivo, "Olá, arquivo!\n");
-    fprintf(arquivo, "Este é um teste de escrita em C.\n");
-    fprintf(arquivo, "Número: %d\n", 123);
+    // `fprintf` works like `printf`, but writes to a file.
+    fprintf(arquivo, "Hello, file!\n");
+    fprintf(arquivo, "This is a test of writing in C.\n");
+    fprintf(arquivo, "Number: %d\n", 123);
 
-    // `fclose` fecha o arquivo, salvando as alterações.
+    // `fclose` closes the file, saving the changes.
     fclose(arquivo);
 
-    printf("Arquivo 'exemplo.txt' escrito com sucesso.\n\n");
+    printf("File 'exemplo.txt' written successfully.\n\n");
 
-    // --- Leitura de Arquivo ---
+    // --- Reading from a File ---
 
-    // Abre o mesmo arquivo em modo de leitura ("r" para read)
+    // Open the same file in read mode ("r")
     arquivo = fopen("exemplo.txt", "r");
 
     if (arquivo == NULL) {
-        printf("Erro ao abrir o arquivo para leitura!\n");
+        printf("Error opening the file for reading!\n");
         return 1;
     }
 
-    printf("Lendo o conteúdo do arquivo:\n");
-    char linha[100]; // Buffer para armazenar cada linha lida
+    printf("Reading the file content:\n");
+    char linha[100]; // Buffer to store each line read
 
-    // `fgets` lê uma linha do arquivo até encontrar uma nova linha ou o fim do arquivo (EOF).
+    // `fgets` reads a line from the file until it finds a newline or the end of the file (EOF).
     while (fgets(linha, sizeof(linha), arquivo) != NULL) {
-        // Imprime a linha que foi lida
+        // Print the line that was read
         printf("%s", linha);
     }
 

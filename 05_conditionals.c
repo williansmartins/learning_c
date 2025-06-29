@@ -1,5 +1,5 @@
 // 05_conditionals.c
-// Usando if, else if e else para controlar o fluxo do programa.
+// Using if, else if, and else to control the program flow.
 
 #include <stdio.h>
 
@@ -19,4 +19,3 @@ int main() {
 
     return 0;
 }
-

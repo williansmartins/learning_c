@@ -1,10 +1,10 @@
 // 10_structs.c
-// Como agrupar diferentes tipos de dados em uma única estrutura (struct).
+// How to group different data types into a single structure (struct).
 
 #include <stdio.h>
-#include <string.h> // Para usar a função strcpy
+#include <string.h> // To use the strcpy function
 
-// Definindo uma estrutura para representar uma Pessoa
+// Defining a structure to represent a Person
 struct Pessoa {
     char nome[50];
     int idade;
@@ -12,16 +12,16 @@ struct Pessoa {
 };
 
 int main() {
-    // Declarando uma variável do tipo `struct Pessoa`
+    // Declaring a variable of type `struct Pessoa`
     struct Pessoa pessoa1;
 
-    // Atribuindo valores aos membros da struct
-    // Para strings (arrays de char), usamos `strcpy` da biblioteca <string.h>
+    // Assigning values to the struct members
+    // For strings (char arrays), we use `strcpy` from the <string.h> library
     strcpy(pessoa1.nome, "Carlos");
     pessoa1.idade = 30;
     pessoa1.altura = 1.80;
 
-    // Acessando e imprimindo os valores
+    // Accessing and printing the values
     printf("Dados da Pessoa 1:\n");
     printf("Nome: %s\n", pessoa1.nome);
     printf("Idade: %d\n", pessoa1.idade);

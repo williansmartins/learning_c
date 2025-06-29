@@ -1,18 +1,18 @@
 // 01_hello_world.c
-// O programa mais básico em C. Ele imprime "Olá, Mundo!" na tela.
+// The most basic C program. It prints "Olá, Mundo!" to the screen.
 
-// A função `printf` faz parte da biblioteca de entrada/saída padrão,
-// então precisamos incluir o cabeçalho que a define.
+// The `printf` function is part of the standard input/output library,
+// so we need to include the header that defines it.
 #include <stdio.h>
 
-// A função `main` é o ponto de entrada de todo programa em C.
-// O sistema operacional chama esta função quando o programa é executado.
+// The `main` function is the entry point of every C program.
+// The operating system calls this function when the program is run.
 int main() {
-    // `printf` é usada para imprimir texto formatado na tela.
-    // A sequência `\n` representa um caractere de nova linha.
+    // `printf` is used to print formatted text to the screen.
+    // The `\n` sequence represents a newline character.
     printf("Olá, Mundo!\n");
 
-    // A função `main` retorna um inteiro.
-    // Retornar 0 indica que o programa foi executado com sucesso.
+    // The `main` function returns an integer.
+    // Returning 0 indicates that the program executed successfully.
     return 0;
 }

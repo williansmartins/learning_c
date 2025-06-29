@@ -1,18 +1,18 @@
 // 07_functions.c
-// Como criar e usar suas próprias funções para organizar o código.
+// How to create and use your own functions to organize code.
 
 #include <stdio.h>
 
-// Declaração da função (protótipo)
-// Informa ao compilador que a função `soma` existe.
+// Function declaration (prototype)
+// This tells the compiler that the `soma` function exists.
 int soma(int a, int b);
 
-// A função `main` vem primeiro
+// The `main` function comes first
 int main() {
     int num1 = 10;
     int num2 = 20;
 
-    // Chamando a função `soma` e armazenando o resultado
+    // Calling the `soma` function and storing the result
     int resultado = soma(num1, num2);
 
     printf("A soma de %d e %d é %d\n", num1, num2, resultado);
@@ -20,10 +20,9 @@ int main() {
     return 0;
 }
 
-// Definição da função
-// Aqui está o código que a função executa.
+// Function definition
+// Here is the code that the function executes.
 int soma(int a, int b) {
-    // A palavra-chave `return` envia o valor de volta para quem chamou a função.
+    // The `return` keyword sends the value back to the caller.
     return a + b;
 }
-

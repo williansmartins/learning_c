@@ -1,33 +1,33 @@
 // 04_operators.c
-// Demonstração dos operadores aritméticos, relacionais e lógicos.
+// Demonstration of arithmetic, relational, and logical operators.
 
 #include <stdio.h>
 
 int main() {
     int a = 10, b = 5;
 
-    // Operadores Aritméticos
-    printf("--- Operadores Aritméticos ---\n");
-    printf("Soma (a + b): %d\n", a + b);
-    printf("Subtração (a - b): %d\n", a - b);
-    printf("Multiplicação (a * b): %d\n", a * b);
-    printf("Divisão (a / b): %d\n", a / b);
-    printf("Módulo (resto da divisão, a %% b): %d\n", a % b);
+    // Arithmetic Operators
+    printf("--- Arithmetic Operators ---\n");
+    printf("Sum (a + b): %d\n", a + b);
+    printf("Subtraction (a - b): %d\n", a - b);
+    printf("Multiplication (a * b): %d\n", a * b);
+    printf("Division (a / b): %d\n", a / b);
+    printf("Modulus (remainder of division, a %% b): %d\n", a % b);
 
-    // Operadores Relacionais (resultam em 1 para verdadeiro, 0 para falso)
-    printf("\n--- Operadores Relacionais ---\n");
-    printf("a > b: %d\n", a > b);   // Maior que
-    printf("a < b: %d\n", a < b);   // Menor que
-    printf("a == b: %d\n", a == b); // Igual a
-    printf("a != b: %d\n", a != b); // Diferente de
+    // Relational Operators (result in 1 for true, 0 for false)
+    printf("\n--- Relational Operators ---\n");
+    printf("a > b: %d\n", a > b);   // Greater than
+    printf("a < b: %d\n", a < b);   // Less than
+    printf("a == b: %d\n", a == b); // Equal to
+    printf("a != b: %d\n", a != b); // Not equal to
 
-    // Operadores Lógicos
-    int x = 1; // Verdadeiro
-    int y = 0; // Falso
-    printf("\n--- Operadores Lógicos ---\n");
-    printf("E Lógico (x && y): %d\n", x && y); // E (AND)
-    printf("OU Lógico (x || y): %d\n", x || y); // OU (OR)
-    printf("NÃO Lógico (!x): %d\n", !x);     // NÃO (NOT)
+    // Logical Operators
+    int x = 1; // True
+    int y = 0; // False
+    printf("\n--- Logical Operators ---\n");
+    printf("Logical AND (x && y): %d\n", x && y);
+    printf("Logical OR (x || y): %d\n", x || y);
+    printf("Logical NOT (!x): %d\n", !x);
 
     return 0;
 }
