@@ -1,56 +1,56 @@
-# 🚀 Jornada de Aprendizado em C
+# 🚀 C Learning Journey
 
-Este repositório documenta minha jornada de aprendizado da linguagem de programação C. Ele contém uma série de programas simples, cada um focado em um conceito fundamental da linguagem.
+This repository documents my learning journey with the C programming language. It contains a series of simple programs, each focusing on a fundamental concept of the language.
 
-## 📚 Conceitos Abordados
+## 📚 Concepts Covered
 
-Os programas estão organizados em ordem crescente de complexidade:
+The programs are organized in increasing order of complexity:
 
-- **01_hello_world.c**: A estrutura básica de um programa em C e a função `printf`.
-- **02_variables.c**: Declaração, atribuição e uso de variáveis de diferentes tipos de dados.
-- **03_input.c**: Leitura de dados inseridos pelo usuário com `scanf`.
-- **04_operators.c**: Uso de operadores aritméticos, relacionais e lógicos.
-- **05_conditionals.c**: Controle de fluxo com as estruturas `if`, `else if` e `else`.
-- **06_loops.c**: Repetição de código com os laços `for` e `while`.
-- **07_functions.c**: Criação e uso de funções para modularizar o código.
-- **08_arrays.c**: Armazenamento e manipulação de coleções de dados com arrays.
-- **09_pointers.c**: Introdução a ponteiros, endereços de memória e dereferência.
-- **10_structs.c**: Definição de tipos de dados customizados com `struct`.
-- **11_files.c**: Operações básicas de leitura e escrita em arquivos de texto.
+- **01_hello_world.c**: The basic structure of a C program and the `printf` function.
+- **02_variables.c**: Declaration, assignment, and use of variables of different data types.
+- **03_input.c**: Reading user input with `scanf`.
+- **04_operators.c**: Using arithmetic, relational, and logical operators.
+- **05_conditionals.c**: Flow control with `if`, `else if`, and `else` statements.
+- **06_loops.c**: Code repetition with `for` and `while` loops.
+- **07_functions.c**: Creating and using functions to modularize code.
+- **08_arrays.c**: Storing and manipulating data collections with arrays.
+- **09_pointers.c**: Introduction to pointers, memory addresses, and dereferencing.
+- **10_structs.c**: Defining custom data types with `struct`.
+- **11_files.c**: Basic read and write operations on text files.
 
-## 🛠️ Como Usar
+## 🛠️ How to Use
 
-### Pré-requisitos
+### Prerequisites
 
-Para compilar e executar estes programas, você precisará de:
-- Um compilador C (como `gcc` ou `clang`)
-- A ferramenta `make`
+To compile and run these programs, you will need:
+- A C compiler (like `gcc` or `clang`)
+- The `make` tool
 
-### Compilação
+### Compilation
 
-Graças ao `Makefile` incluído, você pode compilar todos os programas de uma só vez. Navegue até o diretório raiz do projeto e execute:
+Thanks to the included `Makefile`, you can compile all the programs at once. Navigate to the project's root directory and run:
 
 ```bash
 make
 ```
 
-Isso irá gerar um executável para cada arquivo `.c`.
+This will generate an executable for each `.c` file.
 
-### Executando um Programa
+### Running a Program
 
-Após a compilação, você pode executar qualquer um dos programas da seguinte forma:
+After compilation, you can run any of the programs as follows:
 
 ```bash
-# Exemplo executando o primeiro programa
+# Example running the first program
 ./01_hello_world
 
-# Exemplo executando o programa de condicionais
+# Example running the conditionals program
 ./05_conditionals
 ```
 
-### Limpeza
+### Cleanup
 
-Para remover todos os arquivos executáveis gerados e limpar o diretório, execute:
+To remove all generated executable files and clean up the directory, run:
 
 ```bash
 make clean
